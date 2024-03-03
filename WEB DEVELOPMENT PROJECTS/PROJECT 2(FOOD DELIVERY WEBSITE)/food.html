@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD KING</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+
+
+        /* navbar styling start here */
+        .nav {
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: white;
+            display: flex;
+            width: 100%;
+            height: 9%;
+            /* border: 2px solid black; */
+
+        }
+
+        .logo {
+            /* display: block; */
+            display: flex;
+            /* align-items: center;
+            justify-content: center; */
+            margin-left: 75px;
+            /* border:2px solid #FF2B85;
+            border-radius: 5px; */
+            width: 13%;
+
+
+
+
+
+        }
+
+        .logo h1 {
+            color: #FF2B85;
+            font-weight: bold;
+            margin-left: 8px;
+
+
+
+        }
+
+        .logo img {
+            display: block;
+            width: 55px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-top: 16px;
+            border: 2px solid #FF2B85;
+            border-radius: 13px;
+            background-color: #FF2B85;
+
+
+
+            
+        }
+
+        .nav ul {
+            display: flex;
+            /* align-items: flex-end; */
+            /* padding:0px 30px; */
+            margin-left: 250px;
+            margin-top: 25px;
+            list-style: none;
+            /* text-decoration: none; */
+            white-space: nowrap;
+        }
+
+        .nav li {
+            /* color:black;
+            text-decoration: none; */
+            padding: 0px 15px;
+        }
+
+      
+
+        .li a {
+            color: black;
+            text-decoration: none;
+            margin: 0px 7px;
+
+        }
+        .li a:hover{
+            text-decoration: overline #FF2B85; 
+        
+        }
+
+
+        .btn a {
+            text-decoration: none;
+            list-style: none;
+            border: 2px solid #FF2B85;
+            border-radius: 15px;
+            color:white;
+            background-color: #FF2B85;
+            padding:5px;
+            
+        }
+        .btn a:hover{
+            background-color: #f582b2;
+        }
+        input{
+            border-radius: 10px;
+            padding: 3px;
+        }
+        input:hover{
+            height: 35px;
+        }
+       
+
+        input::placeholder {
+            text-align: center;
+        }
+        /* navbar styling ends here */
+
+
+        /* video part starts here */
+        .video{
+            width:100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav" id="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="YOU ARE GREAT">
+                <h1>foodpartners</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="li"><a href="#">Home </a></li>
+                    <li class="li"><a href="#">About </a></li>
+                    <li class="li"><a href="#">Newsroom </a></li>
+                    <li class="li"><a href="#">Food Ads </a></li>
+                    <li class="li"><a href="#">Contact </a></li>
+                    <li class="li"><a href="#">Careers </a></li>
+                    <li class="btn"><a href="#">Choose Location</a></li>
+                    <input type="search" placeholder="Search here">
+                </ul>
+            </div>
+        </nav>
+        <!-- <div class="video">
+             <video src="video_preview_h264.mp4"></video> -->
+            <video class="video" autoplay>
+                <source src="video_preview_h264.mp4" type="video/mp4" />
+            </video>
+             
+        </div>
+    </div>
+</body>
+
+</html>

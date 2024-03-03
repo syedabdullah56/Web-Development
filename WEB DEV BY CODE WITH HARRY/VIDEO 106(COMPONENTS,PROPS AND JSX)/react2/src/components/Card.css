@@ -1,0 +1,27 @@
+.card{
+    width: 17vw;
+    height: 40vh;
+    background-color: lightgray;
+    color:black;
+    position: relative;
+    top:5vh;
+    left: 5vh;
+    border: 2px solid darkgray;
+    margin:3vh;
+    overflow: hidden;
+    
+}
+img{
+    object-fit: cover;
+    
+    position: absolute;
+    z-index: 1;
+}
+/* h1{
+    position: absolute;
+    z-index: 2;
+}
+p{
+    position: absolute;
+    z-index: 3;
+} */

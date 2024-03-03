@@ -1,0 +1,465 @@
+body {
+  background-color: #000000;
+}
+#bgimg1 {
+  /* background-image: url(bg.jpg); */
+  width: 100vw;
+  height: 75vh;
+  position: absolute;
+  filter: brightness(0.3);
+  z-index: 1;
+  transform: scale(1.35);
+  /* background-repeat: no-repeat; */
+}
+#svgnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#svg {
+  position: absolute;
+  width: 144px;
+  height: 52px;
+  z-index: 2;
+  left: 178px;
+  fill: #e50914;
+  top: 22px;
+}
+#navbtn {
+  position: absolute;
+  z-index: 2;
+  width: 76.9px;
+  height: 32px;
+  right: 170px;
+  top: 22px;
+  color: white;
+  background-color: #e50914;
+  border-radius: 5px;
+}
+
+#midtxt {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Rethink Sans", sans-serif;
+  margin: -5px;
+}
+#sp1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 5px;
+  padding: 5px;
+  transform: scale(0.90);
+}
+#sp2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 8px;
+  padding: 8px;
+  transform: scale(1.05);
+}
+#sp3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 8px;
+  padding: 8px;
+  transform: scale(1.05);
+}
+#searchgetstart {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  top: 108px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+#search {
+  height: 40px;
+  width: 330px;
+  position: relative;
+  right: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: lightgray;
+  /* border:none; */
+}
+#search::placeholder {
+  color: lightgray;
+  position: relative;
+  padding-left: 10px;
+  font-size: 18px;
+}
+#search:focus {
+  color: lightgray; /* Change text color to white when input is in focus */
+}
+
+#gst {
+  height: 52px;
+  width: 175px;
+  position: relative;
+  border-radius: 5px;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 650;
+  right: 23px;
+  color: white;
+  background-color: #e50914;
+}
+#sep1 {
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 2;
+  top: 88vh;
+  border: none;
+}
+
+.sec1 {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  flex-direction:row-reverse;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 143vh;
+  margin: 0px 110px;
+  padding: 0px 110px;
+}
+
+#imgvid{
+  position: relative;
+  width: 100%;
+  max-width: 75%; 
+  margin-bottom: 250px; 
+}
+
+#img1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 4;
+}
+
+#vid {
+  width: 75%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sp {
+  position: relative;
+  bottom: 78px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+#span1 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 10px 0px;
+}
+#span2 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#sep2 {
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 2;
+  top: 163vh;
+  border: none;
+}
+#mobtxt{
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  flex-direction:row;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 207vh;
+  margin-right: 10vw;
+  /* padding: 0px 110px; */
+  right:5vw;
+}
+#img2{
+  height:400px;
+  width:auto;
+  margin-right: 20px;
+}
+.spsec2{
+  display: flex;
+  flex-direction: column;
+  justify-content:left ;
+  align-items: left;
+}
+#span1sec2 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 5px;
+  /* display: block; */
+}
+
+#span2sec2 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 10px;
+}
+#span3sec2 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#span4sec2 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#sep3 {
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 2;
+  top: 240vh;
+  border: none;
+}
+.sec3{
+  display: flex;
+  justify-content: left;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items:left;
+  position: absolute;
+  z-index: 5;
+  flex-direction:column;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 273vh;
+  margin-left: 21vw;
+}
+#s1{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  /* margin-bottom: 7px; */
+}
+#s2{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+#s3{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#s4{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#s5{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#sep4{
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 2;
+  top: 292vh;
+  border: none;
+}
+#sec4{
+  display: flex;
+  justify-content: center;
+  max-width: 85vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  position: absolute;
+  z-index: 4;
+  flex-direction:row;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 340vh;
+  margin-right: 10vw;
+  /* padding: 0px 110px; */
+  /* right:5vw; */
+  left:10vw;
+}
+#s1sec4{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 5px;
+}
+#s2sec4{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#sep5{
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 6;
+  top: 370vh;
+  border: none;
+}
+
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+  position: absolute;
+  z-index:7;
+  font-family: "Rethink Sans", sans-serif;
+  top:385vh;
+  left:25vw;
+
+  
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 10px auto;
+  cursor: pointer;
+}
+#lastsec5{
+  max-width: 70vw;
+  position: absolute;
+  font-family: "Rethink Sans", sans-serif;
+  z-index:  7;
+  /* top:200vh;
+  left:25vh; */
+  top: 105%;
+ transform: translateY(-50%);
+  right: -2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+#lastsp{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  /* margin-right:30vw ; */
+  white-space: nowrap;
+  margin-bottom:7px; 
+}
+#sep6{
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 8;
+  top: 465vh;
+  border: none;
+}
+a{
+  color:lightgray;
+  display: block;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 16px;
+  font-weight:200;
+  margin:18px 0px;
+
+
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  
+  
+
+}
+
+#footer{
+  display: grid;
+  position: absolute;
+  z-index:10;
+  grid-template-columns:2fr 2fr 2fr 2fr;
+  grid-gap: 150px;
+  top:487vh;
+  
+}
+#lastsep{
+  height: 7px;
+  width: 100vw;
+  background-color: rgb(78, 75, 75);
+  position: relative;
+  z-index: 8;
+  top: 510vh;
+  border: none;
+}

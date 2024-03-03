@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">THIS IS A container</div>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, harum!</p>
+    <p id="p2">Lorem ipsum dolor sit amet.</p>
+    <button id="btn1">SET TIMEOUT 1</button>
+    <button id="btn2">CLEAR TIMEOUT 1</button>
+    <button id="btn3">DISPLAY TIME</button>
+    <button id="btn4">REMOVE TIME</button>
+    <script>
+        console.log("Hello World");
+        // settimeout
+        document.getElementById("btn1").addEventListener("click",function(){
+            id1=setTimeout(greet,5000);
+
+        })
+        function greet(){
+            alert("hello you are welcome to my website");
+        }
+        document.getElementById("btn1").addEventListener("click",function(){
+           id2=setTimeout(p1change,3000);
+        })
+        function p1change(){
+            document.getElementById("p1").innerHTML="you are in the world of programming now";
+        }
+        // clearTimeout
+        // document.getElementById("btn2").addEventListener("click",function(){
+        //     clearTimeout(id1);
+        //     clearTimeout(id2);
+        //     alert(" both set timeout has been stopped");
+        // })
+
+        // setInterval
+        document.getElementById("btn3").addEventListener("click",function(){
+            id4=setInterval(displaytime,1000);
+        })
+        function displaytime(){
+            document.getElementById("p2").innerHTML=new Date();
+
+        }
+        document.getElementById("btn4").addEventListener("click",function(){
+            clearInterval(id4);
+            document.getElementById("p2").innerHTML="YOU ARE WELCOME TO THIS WEBSITE I THINK YOU ARE A SOFTWARE ENGINEER";
+
+
+        })
+
+      
+
+
+    </script>
+</body>
+
+</html>

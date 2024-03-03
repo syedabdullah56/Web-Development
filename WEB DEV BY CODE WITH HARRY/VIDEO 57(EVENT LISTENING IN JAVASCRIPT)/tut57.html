@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>EVENT LISTENING IN JS</title>
+</head>
+
+<body>
+   <div class="container">
+      <h1>This is Event Listening in JS</h1>
+      <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis exercitationem id cum ex at maxime
+         fugit, deleniti perferendis, asperiores iste pariatur inventore. Ut voluptates, veritatis eveniet quas, ex
+         ratione fugit saepe, aspernatur vero quidem iste recusandae? Labore ullam quasi mollitia, veniam dolore
+         officiis vitae placeat exercitationem perferendis corporis ea nesciunt numquam accusamus ex blanditiis deserunt
+         magnam similique esse pariatur? Atque quas optio vel, voluptas aliquam ex recusandae quia maiores officia.
+         Voluptate adipisci iure maiores saepe minima quis, aspernatur quisquam aut illo eum asperiores doloremque, quos
+         totam aperiam est sint modi, laboriosam soluta magnam! Impedit unde eligendi delectus voluptatibus ipsum si</p>
+      <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse enim mollitia at hic aperiam dolores,
+         voluptatum quod incidunt vero ad atque possimus fugiat consequuntur? Dolores sed architecto repellendus atque
+         iste adipisci perferendis sit eveniet, exercitationem molestiae cumque doloribus porro illum totam expedita in
+         corporis, soluta aliquam, dolorem culpa! Ipsam rem incidunt pariatur quae inventore nobis quasi optio aliquam?
+         Quia ab ratione quidem excepturi, esse sequi tenetur laudantium, quibusdam animi maxime temporibus harum eos
+         rem assum.</p>
+      <p id="p3">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nostrum distinctio modi iusto maxime animi
+         veniam temporibus quam delectus ut magni, aperiam sunt voluptatem fuga ad doloremque unde, sed et asperiores
+         facilis culpa odit expedita mollitia! Tenetur accusamus itaque accusantium molestiae necessitatibus ex fugit
+         excepturi aut. Possimus, m
+      </p>
+      <p id="p4">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, maxime.
+      </p>
+      <p id="p5"></p>
+      <p id="p6"></p>
+      <p id="p7"></p>
+      <p id="p8"></p>
+      <div id="outer">
+         <div id="middle">
+            <div id="inner">CLICK ME</div>
+         </div>
+      </div>
+      <button id="btn1" onclick="hideP1()">Hide para1</button>
+      <button id="btn2" onclick="showP1()">Show para1</button>
+      <button id="btn3" onclick="hideP2()">Hide para2</button>
+      <button id="btn4" onclick="showP2()">Show para2</button>
+      <button id="btn5" onclick="hideP3()">Hide para3</button>
+      <button id="btn6" onclick="showP3()">Show para3</button>
+      <button id="btn7" onclick="showdate()">Show Date</button>
+      <button id="btn8">Alert</button>
+      <button id="btn9">Two EventListeners</button>
+      <button id="btn10">Three EventListeners</button>
+      <button id="btn11">Two or more Parameters</button>
+
+   </div>
+
+
+   <script>
+      function showdate() {
+         document.getElementById("p4").innerHTML = Date();
+      }
+
+      function hideP1() {
+         document.getElementById("p1").style.display = "none";
+         document.getElementById("btn1").style.display = "none";
+         document.getElementById("btn2").style.display = "block";
+         document.getElementById("btn3").style.display = "block";
+         document.getElementById("btn4").style.display = "block";
+         document.getElementById("btn5").style.display = "block";
+         document.getElementById("btn6").style.display = "block";
+      }
+
+      function showP1() {
+         document.getElementById("p1").style.display = "block";
+         document.getElementById("btn2").style.display = "none";
+         document.getElementById("btn1").style.display = "block";
+         document.getElementById("btn3").style.display = "block";
+         document.getElementById("btn4").style.display = "block";
+         document.getElementById("btn5").style.display = "block";
+         document.getElementById("btn6").style.display = "block";
+      }
+      function hideP2() {
+         document.getElementById("p2").style.display = "none";
+         document.getElementById("btn3").style.display = "none";
+         document.getElementById("btn2").style.display = "block";
+         document.getElementById("btn1").style.display = "block";
+         document.getElementById("btn4").style.display = "block";
+         document.getElementById("btn5").style.display = "block";
+         document.getElementById("btn6").style.display = "block";
+      }
+      function showP2() {
+         document.getElementById("p2").style.display = "block";
+         document.getElementById("btn4").style.display = "none";
+         document.getElementById("btn2").style.display = "block";
+         document.getElementById("btn3").style.display = "block";
+         document.getElementById("btn1").style.display = "block";
+         document.getElementById("btn5").style.display = "block";
+         document.getElementById("btn6").style.display = "block";
+      }
+      function hideP3() {
+         document.getElementById("p3").style.display = "none";
+         document.getElementById("btn5").style.display = "none";
+         document.getElementById("btn2").style.display = "block";
+         document.getElementById("btn3").style.display = "block";
+         document.getElementById("btn4").style.display = "block";
+         document.getElementById("btn1").style.display = "block";
+         document.getElementById("btn6").style.display = "block";
+      }
+      function showP3() {
+         document.getElementById("p3").style.display = "block";
+         document.getElementById("btn6").style.display = "none";
+         document.getElementById("btn2").style.display = "block";
+         document.getElementById("btn3").style.display = "block";
+         document.getElementById("btn4").style.display = "block";
+         document.getElementById("btn5").style.display = "block";
+         document.getElementById("btn1").style.display = "block";
+      }
+
+      document.getElementById("btn8").addEventListener("click", customalert);
+      function customalert() {
+         alert("You are beautiful");
+      }
+      document.getElementById("btn9").addEventListener("click", customalert);
+      document.getElementById("btn9").addEventListener("click", MyFunction);
+      function customalert() {
+         alert("You are beautiful");
+      }
+      function MyFunction() {
+         alert("This function is also executed");
+      }
+      document.getElementById("btn10").addEventListener("mouseover", myfirst);
+      document.getElementById("btn10").addEventListener("mouseout", mysecond);
+
+      document.getElementById("btn10").addEventListener("click", customalert);
+      function myfirst(){
+         document.getElementById("p5").innerHTML="MOUSE OVER!";
+      }
+      function mysecond(){
+         document.getElementById("p5").innerHTML="MOUSE OUT!";
+      }
+      // it will fires when anyone resizes the window
+      window.addEventListener("resize",sizechange);
+      function sizechange(){
+         document.getElementById("p6").innerHTML="WINDOW IS RESIZED";
+      }
+      a=7;
+      b=10;
+      document.getElementById("btn11").addEventListener("click",function(){
+         myfunction3(a,b);
+      });
+      function myfunction3(){
+         document.getElementById("p7").innerHTML=a+b;
+         document.getElementById("p8").innerHTML=a*b;
+      }
+      // document.getElementsByClassName("p1").addEventListener("click",myfunction3,true);
+      // remove event listener
+      // window.removeEventListener("resize",sizechange);
+      // EVENT CAPTURING
+      doucument.getElementById("outer").addEventListener("click",function4,true);
+      doucument.getElementById("middle").addEventListener("click",function5,true);
+      doucument.getElementById("inner").addEventListener("click",function6,true);
+      function function4(){
+         console.log("IAM OUTER");
+      }
+      function function5(){
+         console.log("IAM MIDDLE");
+      }
+      function function6(){
+         console.log("IAM INNER");
+      }
+   
+
+   
+
+
+
+   </script>
+</body>
+
+</html>

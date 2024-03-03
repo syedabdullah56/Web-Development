@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em,rem,vh,vw</title>
+    <style>
+        html{
+            font-size: 20px;
+
+        }
+      .container{
+        height: 500px;
+        width:100%;
+        border:2px solid black;
+        font-size: 10px;
+        height:100vh;
+        width:100vw;
+      }
+      #first{
+        /* em means mutiply by parent  */
+        /* rem means multiply by html style */
+
+        font-size: 5em;
+      }
+
+      #second{
+        font-size: 5rem;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1  id="first">THIS IS FIRST HEADING</h1>
+        <h1  id="second">THIS IS SECOND HEADING</h1>
+        <h1>THIS IS THIRD HEADING</h1>
+    </div>
+</body>
+</html>

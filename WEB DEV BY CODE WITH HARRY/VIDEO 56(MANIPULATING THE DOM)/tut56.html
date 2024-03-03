@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <ul id="ul">
+            <li class="li">item-1</li>
+            <li class="li">item-2</li>
+            <li class="li">item-3</li>
+            <li class="li">item-4</li>
+            <li class="li">item-5</li>
+            <li class="li">item-6</li>
+        </ul>
+    </div>
+    <script>
+        // GET ELEMENT BY ID
+        console.log("INDIA DEFEATED PAKISTAN IN WC 2023 8TH TIME");
+        let container=document.getElementById('container');
+        console.log(container);
+        console.log(container.innerHTML="I AM A PROGRAMMER I CAN DO ANYTHING");
+
+        // GET ELEMENT BY CLASS
+        let li = document.getElementsByClassName('li');
+        for (let i = 0; i < li.length; i++) {
+             li[i].innerHTML = "I AM A SOFTWARE ENGINEER";
+                 }
+        
+        // by css selector  class
+        let sel1=document.querySelector('.container');
+        console.log(sel1);
+        console.log(sel1.innerHTML="I AM A PROGRAMMER and also I AM A SOFTWARE ENGINEER");
+
+        // by css selector id
+        let sel2=document.querySelector('#container');
+        console.log(sel2);
+        console.log(sel2.innerHTML="I AM A PROGRAMMER and also I AM A SOFTWARE ENGINEER and also I AM A STUDENT OF NED UNIVERSITY");
+
+        // query selector all
+        let sel3=document.querySelectorAll('.li');
+        console.log(sel2.innerHTML="I AM A PROGRAMMER and also I AM A SOFTWARE ENGINEER and also I AM A STUDENT OF NED UNIVERSITY and also I AM A CHEMICAL ENGINEER SO PLEADE SATY AWAY FROM ME");
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | REJOUICE®</title>
+    <link rel="stylesheet" href="rejoice.css">
+    <link rel="shortcut icon" href="32x32.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader">Tomorrow's  Brands, Today.™</div>
+    </div>
+    <section class="pages">
+    <div class="main">
+      <div id="page1">
+        <div id="cursor"><h3>Play Reel</h3></div>
+        <video
+          src="./ASSETS/RJ-2.0-Video background .mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div id="page1-content">
+          <nav>
+            <h3>The Venture Agency.</h3>
+            <h3>Menu</h3>
+          </nav>
+          <h1>
+            <span>r</span><span>e</span><span>j</span><span>o</span
+            ><span>u</span><span>i</span><span>c</span><span>e</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="rejoice.js"></script>
+    <script>
+      const loaderContainer=document.querySelector('.loader-container');
+      const pages=document.querySelector('.pages');
+      window.addEventListener('load',()=>
+      {
+        loaderContainer.classList.add('hidden');
+        pages.classList.add('visible');
+      })
+    </script>
+  </body>
+</html>

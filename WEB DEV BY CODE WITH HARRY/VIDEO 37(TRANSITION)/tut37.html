@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION PROPERTY</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100vw;
+            height:100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: brown;
+
+        }
+       .box{
+        width:150px;
+        height:150px;
+        background-color: blue;
+        transition-property: all;
+        transition-duration: 5s;
+
+        /* shorthand property */
+        /* transition:all 1s ease-in 3s; */
+        
+
+       }
+
+       .box:hover{
+        background-color:greenyellow;
+        width:200px;
+       }
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="container">
+    <div class="box">THIS IS BOX</div>
+</div>
+</body>
+</html>

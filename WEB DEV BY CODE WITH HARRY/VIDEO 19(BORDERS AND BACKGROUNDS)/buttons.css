@@ -1,0 +1,23 @@
+body {
+    background-image: url("quino-al-JFeOy62yjXk-unsplash.jpg");
+    }
+    
+#h{
+    color:white;
+    background-color: blueviolet;
+    height: 70px;
+    width: 450px;
+    border:5px solid white;
+    border-radius: 40px;
+    text-align: center;
+}
+.mybuttons{
+    color:white;
+    background-color: blueviolet;
+    height: 55px;
+    width: 300px;
+    border:5px solid white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 3em;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">This is an arrow function tutorial</div>
+    <script>
+        // Arrow function provides us a short form to write the function
+        greet=()=>{
+            console.log("Welcome to arrow function tutorial");
+        }
+        greet();
+        setTimeout(()=>{
+            console.log("Welocme to my programming world after 3s");
+        },3000);
+
+        let sum=(a,b,c)=>a+b+c;
+        let add=sum(4456743,57634,67890);
+        console.log(add);
+
+        // two args below will give an error
+        let half=a=>console.log(a/2);
+        half(90);
+        half(150);
+        half(334878920);
+        half(968330);
+        half(2867340);
+        half(1000000);
+
+        let greet1=()=>console.log("Good Morning");
+        greet1()
+
+        // age function
+        function age(){
+            this.age=0;
+            setInterval(function(){
+                this.age++;
+                alert(this.age);
+            },3000);
+        }
+     
+        age();
+    </script>
+</body>
+</html>

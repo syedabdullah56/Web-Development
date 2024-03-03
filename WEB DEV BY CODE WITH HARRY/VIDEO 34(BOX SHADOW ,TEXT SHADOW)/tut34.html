@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOx shadow and Text shadow</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            margin: 10px;
+            padding: 10px;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+
+            /* box-shadow:x y blurradius spreadradius color ; */
+            /* box-shadow: 2px 2px green; */
+            /* box-shadow: 2px 2px 2px green; */
+            box-shadow: 3px 3px 3px 3px green;
+            /* it will make shadow on top */
+            box-shadow: -3px -3px -3px -3px green;
+            /* for shadow inside */
+            box-shadow:inset 3px 3px 3px green;
+            /* two shadows in one time */
+            box-shadow: 3px 3px 3px 3px green,3px 3px 3px 3px yellow;
+        }
+        H1{
+            /* text-shadow:x y blurradius  color ; */
+            /* text-shadow: 2px 2px 2px gray; */
+            box-shadow:inset 3px 3px 3px gray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <H1>BOX 1 </H1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facilis.</p>
+        </div>
+        <div class="box" id="box2">
+            <H1>BOX 2 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, voluptas.</p>
+            </H1>
+        </div>
+        <div class="box" id="box3">
+            <H1>BOX 3</H1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, suscipit?</p>
+        </div>
+    </div>
+</body>
+
+</html>

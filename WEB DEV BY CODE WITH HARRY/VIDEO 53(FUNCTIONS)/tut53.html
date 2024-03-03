@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is container
+    </div>
+    <script>
+        console.log("This is tut 53 of js");
+        let name="Abdullah";
+        let name1="Aaliyan";
+        let name2="Badar";
+        let name3="Rehan";
+        let name4="Tariq";
+        // without function
+        console.log("Good morning"+name);
+        console.log("Good morning"+name1);
+        console.log("Good morning"+name2);
+        console.log("Good morning"+name3);
+        console.log("Good morning"+name4);
+
+        // with function
+        function greet(name){
+            console.log("GOOD MORNING"+" "+name);
+        }
+        greet(name);
+        greet(name1);
+        greet(name2);
+        greet(name3);
+        greet(name4);
+
+        let greettext="You are welcome to the new version of javascript";
+        function greet1(name,greettext){
+            console.log(name+" "+greettext);
+        }
+        greet1(name,greettext);
+        greet1(name1,greettext);
+        greet1(name2,greettext);
+        greet1(name3,greettext);
+        greet1(name4,greettext);
+
+        // return
+        let a=greet(name4);
+        // it will not return any value
+        console.log(a);
+        
+        function add(a,b,c){
+            let d=a+b+c;
+            return d;
+        }
+        let b=add(1,2,3);
+        console.log(b);
+
+    
+    </script>
+    
+</body>
+</html>

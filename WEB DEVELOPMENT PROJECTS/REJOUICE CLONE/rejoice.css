@@ -1,0 +1,141 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+.loader-container{
+    position: fixed;
+    inset:0;
+    z-index: 999;
+    background-color: #151618;
+    display: grid;
+    place-content: center;
+    transition:opacity .4s ease-in-out,visibility .4s ease-in-out;
+
+}
+@keyframes opacity{
+    from{
+        opacity:1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.loader {
+    font-size: larger;
+    color: white;
+    transform: translateX(10vw);
+    animation: slideIn 0.6s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+    }
+  }
+  .loader-container.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.pages{
+    opacity: 0;
+    transform: translate3d(0,-6rem,0);
+    transition: opacity .6s ease-in-out,transform .6s ease-in-out;
+}
+.pages.visible{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+#page1{
+    height:100vh;
+    width:100vw;
+    /* background-color: bisque; */
+    position: relative;
+    
+}
+#cursor{
+    height:7.5vw;
+    width:7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index:3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+#cursor h3{
+    color:black;
+    font-family: "nb";
+    font-weight: 500;
+    font-size: 1.15vw;
+}
+#page1 video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+
+#page1-content{
+    height: 100%;
+    width:100%;
+    /* background-color:black; */
+    position: relative;
+    z-index: 5;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+nav{
+    display: flex;
+    align-items:center;
+    width:100%;
+    justify-content: space-between;
+
+}
+
+nav h3{
+    padding:4.2vh 3vw;
+
+    font-size: 1.4vw;
+    /* font-family: 'Rejouice-Headline';  */
+    /* font-family: 'NBInternationalProBoo'; */
+    font-family: "nb";
+    font-weight: 100;
+
+}
+#page1-content h1 span{
+    font-family: "rejoy";
+    font-weight: 100;
+    font-size: 27vw;
+    position: relative;
+    top: 14vh;
+}
+/* @keyframes up{
+    from{
+        transform: translate3d(0,8vh,0);
+
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
+#page1-content h1{
+    animation:up 0.4s ease-in-out forwards ;
+    animation-delay: 0.6s;
+} */
+
+
+

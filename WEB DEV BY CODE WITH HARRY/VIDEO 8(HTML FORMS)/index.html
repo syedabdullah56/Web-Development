@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS FROM HTML</title>
+</head>
+
+<body>
+    <H2>THIS IS HTML FORM </H2>
+    <form action="backend.php">
+        <label for="name">NAME</label>
+        <div><input type="text" name="myname" id="name">
+        </div><br>
+        <label for="id">ID</label>
+        <div><input type="number" name="myid" id="id">
+        </div><br>
+        <label for="role">ROLE</label>
+        <div><input type="text" name="myrole" id="role">
+        </div><br>
+        <label for="exp">EXPERIENCE IN YEARS</label>
+        <div><input type="number" name="myexp" id="exp">
+        </div><br>
+        <label for="check">ARE YOU ELIGIBLE?</label>
+        <div><input type="checkbox" name="mycheckbox" id="check" checked>
+        </div><br>
+        <div>GENDER:Male<input type="radio" name="myGENDER">
+            Female<input type="radio" name="myGENDER">Other<input type="radio" name="myGENDER">
+        </div><br>
+        <div>DATE:<input type="date" name="mydate">
+        </div><br>
+        <label for="txt"></label>
+        <div>WRITE ABOUT YOURSELF: <br></YOURSELF:BR> <textarea name="mytext" id="txt" cols="70" rows="25"></textarea>
+        </div><br>
+        <label for="car">SELECT CAR:</label>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf">Swift</option>
+            <option value="meh" selected>Mehran</option>
+            <option value="cor">Corolla</option>
+        </select>
+        </div><br>
+        <div><input type="reset" name="reset" value="reset now">
+            <input type="submit" name="submit" value="submit now">
+        </div>
+    </form>
+</body>
+
+</html>

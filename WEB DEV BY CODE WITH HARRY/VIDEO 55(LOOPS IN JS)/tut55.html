@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is container
+    </div>
+    <script>
+        console.log("this is js loops lecture")
+        i=0
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+            
+        }
+        let friends=["abdullah,aaliyan","badar","usman","osama","ali","abdulrehman"];
+        for (let index=0;index < friends.length;index++){
+            console.log("Hello friend"+" "+friends[index] +"you are welcome to new version of js");
+        }
+
+
+
+        // modern js
+        // for each loop in js
+        friends.forEach(element => {
+            console.log(element);
+            
+        });
+
+        friends.forEach(function f(element){
+            console.log(element);
+        });
+        
+        // for of loop
+        for(element of friends){
+            console.log(element);
+        }
+        
+        let a=[1,3,4,5,6,7,,8,9];
+        for ( element of a){
+            console.log(element);
+        }
+
+        // to iterate objects we use fro in loops:
+        // for in loop
+        let employee={
+            name:"Abdullah",
+            salary:2000000000,
+            id:1234,
+            experience:"5 years",
+        }
+        console.log(employee.name);
+        for (const key in employee) {
+            const value = employee[key];
+             console.log(`${key}: ${value}`);
+}
+        
+        for (const [key, value] of Object.entries(employee)) {
+             console.log(`${key}: ${value}`);
+}
+        k=1;
+        while(k<10) 
+        {
+            console.log(k+" "+"is less than 10");
+            k++;
+            
+        }
+        // j=15
+        // do {
+        //     console.log(j +"is less than 10")
+        // } while (j<10){
+        //     j--;
+        // }
+        let j = 0;
+
+        do {
+             console.log(`This is iteration ${j}`);
+              j++;
+             } while (j < 5);
+
+
+        
+
+    </script>
+</body>
+</html>

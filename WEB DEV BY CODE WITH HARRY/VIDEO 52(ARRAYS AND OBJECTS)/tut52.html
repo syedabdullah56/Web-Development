@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+            <li>item-9</li>
+        </ul>
+    </div>
+    <script>
+        let Myvar=32;
+        console.log(Myvar);
+        let Myvar1="string";
+        let Myvar2=true;
+        let Myvar3=null;
+        let Myvar4=undefined;
+        console.log(Myvar1);
+        console.log(Myvar2);
+        console.log(Myvar3);
+        console.log(Myvar4);
+
+        // object ,it is like dictionary in python
+        let employee={
+            designation:"Software Engineer",
+            salary:10000,
+            id:340,
+            experience:"10years",
+            // to make space
+            "sur name":"Abdulllah",
+
+
+        }
+        console.log(employee);
+        // this is giving error
+        // console.log(employee[0]);
+        // console.log(employee[1]);
+        // console.log(employee[2]);
+        // console.log(employee[3]);
+        console.log(employee.designation);
+        console.log(employee.salary);
+        console.log(employee.id);
+        console.log(employee.experience);
+        // another way to write this is
+        console.log(employee['designation'])
+        console.log(employee['salary'])
+        console.log(employee['id'])
+        console.log(employee['experience'])
+        // to print thing with space
+        console.log(employee['sur name'])
+
+
+
+        // array, it is like a lst in python
+        let names=["Abdullah","Aaliyan","Badar","USMAN","Zain"];
+        console.log(names);
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[2]);
+        console.log(names[3]);
+        console.log(names[4]);
+        console.log(names.length);
+        // to push or append an array
+        names.push("this is pushed");
+        console.log(names);
+        // array is also an object
+        // another method to write an array?
+        let name=new Array(2,1,3,3,8,4,5,2,9,0,1);
+        console.log(name);
+        // to sort an array
+        name1=name.sort();
+        console.log(name1);
+        let array=new Array(23);
+        console.log(array);
+
+
+        
+
+
+    </script>
+</body>
+</html>

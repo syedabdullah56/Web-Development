@@ -1,0 +1,19 @@
+{
+  "name": "pak",
+  "version": "1.0.0",
+  "description": "pak",
+  "main": "pak",
+  "type": "module",
+  "scripts": {
+    "test": "pak"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pak"
+  },
+  "keywords": [
+    "pak"
+  ],
+  "author": "pak",
+  "license": "ISC"
+}

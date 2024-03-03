@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>lorem4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde itaque doloremque repellendus, recusandae mollitia fugit dolorum corporis aspernatur dicta inventore nobis, id illo quisquam nostrum aperiam nam consequuntur in, ab libero odio optio assumenda! Tenetur, beatae tempora! Impedit ab ducimus quasi, distinctio at nihil quod nostrum cumque tenetur sapiente!</p>
+        </div>
+    </div>
+    <script>
+        var str="THIS IS A LAPTOP";
+        var str1="THIS IS A MOBILE";
+        console.log(str);
+        // indexOf function
+        var position=str.indexOf('IS');
+        var position1=str.lastIndexOf('IS');
+        var position2=str.indexOf('LAPTOP');
+        console.log(position);
+        console.log(position1);
+        console.log(position2);
+
+        // substring function
+        // slice can take -ve values
+        var substr=str.slice(1,6);
+        var substr1=str.substr(1,6);
+        // it cant take -ve values
+        var substr2=str.substring(1,6);
+        console.log(substr);
+        console.log(substr1);
+        console.log(substr2);
+
+        // replace function
+        var replaced=str.replace('LAPTOP','STRING');
+        console.log(str);
+        console.log(replaced);
+
+        // uppercase and lower case function
+        var uppercase=str.toUpperCase();
+        var lowercase=str.toLowerCase();
+        console.log(uppercase);
+        console.log(lowercase);
+
+        // concat function
+        var concat=str.concat(str1);
+        var concat1="THIS IS STR AND STR1 AFTER CONCATENATION"+(str+str1);
+        console.log(concat);
+        console.log(concat1);
+
+        // trimfunction
+        // it trims whitespaces from start and end
+        var str2="    this   is a  ball   ";
+        var trim=str2.trim();
+        console.log(str2);
+        console.log(trim);
+
+        // character AT function
+        var char2=str.charAt(2);
+        var charcode2=str.charCodeAt(2);
+        console.log(char2);
+        console.log(charcode2);
+        console.log(str[2]);
+
+
+
+
+    </script>
+</body>
+</html>

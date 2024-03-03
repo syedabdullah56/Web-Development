@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmood Fitness Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: url(gym4.jpg);
+            color:white;
+            font-family: 'Balsamiq Sans', cursive;font-family: 'Balsamiq Sans', cursive;
+            background-repeat:no-repeat;
+            background-size:cover;
+            
+            
+    
+            
+            
+        
+        }
+        
+        .left{
+            display:inline-block;
+            /* border:2px solid white; */
+            position:absolute;
+            top:30px;
+            left:15px;
+            margin-left: -20px;
+            margin-top: -30px;
+        }
+        .left img{
+            display:block;
+            width:170px;
+            height: 150px;
+            filter:invert(10);
+            margin-left: 35px;
+
+        }
+        .left h2{
+            line-height: normal;
+            margin-top: -17px;
+            font-size: 18px;
+            margin-left: 30px;
+        }
+
+        .right{
+            display:inline-block;
+            /* border:2px solid white; */
+            position: absolute;
+            top:30px;
+            right:15px;
+        }
+        .mid{
+            display:inline-block;
+            border:2px solid white;
+            width:38%;
+            margin:36px auto;
+            margin-left: 470px;
+            border-radius: 13px;
+        }
+        .mid li{
+            display: inline-block;
+            
+        }
+        .mid li a{
+            text-decoration: none;
+            color: white;
+            padding:15px;
+        }
+        .mid li a:hover , .mid li a:active{
+            color:lightslategray;
+            font-size:110%;
+            text-decoration: underline;
+        }
+        .btn{
+            background-color: black;
+            color:white;
+            padding:9px;
+            margin:5px;
+            font-family: 'Balsamiq Sans', cursive;font-family: 'Balsamiq Sans', cursive;
+            border:2px solid white;
+            border-radius: 10px;
+            filter:invert(10)
+
+
+        }
+        .btn:hover{
+            color:lightslategray;
+            font-size:110%;
+            text-decoration: underline;
+        }
+        .container{
+            margin:180px 60px;
+            border:2px solid white;
+            border-radius: 10px;
+            width:400px;
+            padding-left: +35px;
+            padding-bottom: +10px;
+        }
+        .input{
+            display:block;
+            text-align: center;
+            padding:+10px;
+            margin: 13px;
+            width:300px;
+            border-radius: 10px;
+        }
+        .container h1{
+            position:relative;
+            left:+50px;
+            font-size: 40px;
+        }
+        .container .btn{
+            width:340px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- <div class="img">
+        <img src="gym1.jpg" alt="You are beautiful as it is as you are">
+    </div> -->
+    <header>
+        <div class="left" id="logo">
+         <img src="logo.png" alt="You are exceptional">
+         <h2>Mehmood Fitness Club</h2>
+
+        </div>
+        <div class="right" id="support">
+          <button class="btn">Call Now</button>
+          <button class="btn">Chat with us</button>
+
+        </div>
+        <div class="mid" id="navbar">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Plans</a></li>
+                    <li><a href="#">Your Fitness Score</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="container">
+            <h1>Fill This Form</h1>
+            <form action="backend.php">
+                <input type="text" class="input" placeholder="Enter Your Name">
+                <input type="text" class="input" placeholder="Enter Your Age">
+                <input type="text" class="input" placeholder="Enter Your Mobile No">
+                <input type="text" class="input" placeholder="Enter Your Email Id">
+                <input type="text" class="input" placeholder="Enter Your Weight">
+                <input type="submit" class="btn" value="Submit">
+
+            </form>
+        </div>
+    </header>
+    </body>
+</html>

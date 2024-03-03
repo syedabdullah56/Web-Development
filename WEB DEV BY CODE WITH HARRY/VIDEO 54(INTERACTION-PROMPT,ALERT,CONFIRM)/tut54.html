@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        // alert  ,it does not return any value:
+        alert("YOUR MEMBERSHIP WILL BE EXPIRE IN 3 DAYS PLEASE PAY THE SUBSCRIPTION FEES");
+
+        // propmt ,it returns the value:
+        let age=prompt("Enter your age","18");
+        console.log(age);
+
+        // confirm, it also returns values
+        let deletepost=confirm("Are you sure you want to delete this post?");
+        console.log(deletepost);
+
+        if (age>=18){
+            let d=confirm("Are you sure you are 18 or above");
+            if (d==true){
+                console.log("Welcome to this website")
+            }
+        }
+        else{
+            alert("access denied");
+        }
+    </script>
+</body>
+</html>

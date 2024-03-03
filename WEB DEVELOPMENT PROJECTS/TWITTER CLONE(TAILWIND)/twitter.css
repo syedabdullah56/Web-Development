@@ -1,0 +1,146 @@
+.container {
+  width: 81vw;
+  position: absolute;
+  left: 5vw;
+}
+/* ul{
+    font-weight: bold;
+} */
+.second {
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+  width: 170%;
+}
+.material-symbols-outlined {
+  position: relative;
+  top: 0.5vh;
+}
+.w-8 {
+  margin-top: 0.5vh;
+  margin-bottom: 2vh;
+  position: relative;
+  left: 0.35vw;
+}
+.sidebar li {
+  width: fit-content;
+  display: block;
+  /* width:120%; */
+  padding: 0.3vh;
+  transition: all 0.1s ease-in-out;
+}
+
+.sidebar li:hover {
+  background-color: rgb(242, 242, 242);
+  /* padding: 1vh; */
+  border-radius: 2.35vh;
+}
+.third {
+  width: 130%;
+}
+.search {
+  color: rgb(242, 242, 242);
+  width: 23vw;
+  height: 6vh;
+  position: relative;
+  left: 2vw;
+  top: 0.3vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-radius: 2.5vw;
+  background-color: rgb(242, 242, 242);
+}
+.search-icon {
+  color: rgb(62, 60, 60);
+  position: relative;
+  left: 1.5vw;
+}
+
+#search {
+  background-color: rgb(242, 242, 242);
+  width: 90%;
+  border-radius: 2.5vw;
+  height: 6vh;
+  width: 24vw;
+}
+input::placeholder {
+  position: relative;
+  left: 1.5vw;
+}
+.subscribe {
+  width: 23vw;
+  height: 22vh;
+  background-color: rgb(242, 242, 242);
+  position: relative;
+  left: 2vw;
+  top: 7vh;
+  border-radius: 1.5vh;
+}
+.sub {
+  position: relative;
+  left: 0.65vw;
+  top: 1vh;
+  padding: 0.5vh;
+}
+.subscribe h1 {
+  font-size: 1.35vw;
+  font-weight: bold;
+}
+.p1 {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.7vh;
+}
+.btn1 {
+  display: flex;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 2vw;
+}
+.trendsforyou {
+  position: relative;
+  left: 2vw;
+  top: 9.5vh;
+  width: 23vw;
+  /* height: 22vh; */
+  background-color: rgb(242, 242, 242);
+  border-radius: 1.5vh;
+}
+.trends {
+  padding: 2vh;
+  /* margin: 2vh; */
+}
+.trendsforyou h1 {
+  font-size: 1.35vw;
+  font-weight: bold;
+  position: relative;
+  left: 1vw;
+}
+.t1 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 2vh;
+  /* top:2.5vh; */
+}
+.p2 {
+  font-size: 1.65vh;
+  color: rgba(0, 0, 0, 0.8);
+}
+.p3 {
+  font-size: 1.65vh;
+  color: rgba(0, 0, 0, 0.8);
+}
+.h2t1 {
+  font-weight: bold;
+}
+.icon {
+  position: fixed;
+  right: 11.5vw;
+}

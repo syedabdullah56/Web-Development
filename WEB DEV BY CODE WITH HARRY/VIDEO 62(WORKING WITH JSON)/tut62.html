@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">This is a JSON tutorial</div>
+    <script>
+        // It is a format to store and transport data
+        let jsonobj={
+            name:"abdullah",
+            age:18,
+            Profession:"Software Engineer",
+            food:"bhindi",
+
+        }
+        console.log(jsonobj);
+
+        // it will convert obj into string
+        let myjsonobj=JSON.stringify(jsonobj);
+        console.log(myjsonobj);
+        // and we can apply all string methods to this after converting it into string
+        let myjsonobj1=myjsonobj.replace("abdullah","harry");
+        console.log(myjsonobj1);
+
+        // now we will convert string into object
+        let myjsonobj2=JSON.parse(myjsonobj1);
+        console.log(myjsonobj2);
+    </script>
+</body>
+</html>

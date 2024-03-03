@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* advanced css selectors */
+        div li {
+            color: yellow;
+        }
+
+        /* div li p {
+            color: red;
+        } */
+
+        /* direct child of div */
+        div > p {
+            color: aqua;
+        }
+
+        /* first p after div */
+        div + p {
+            color: blue;
+        }
+
+
+
+        /* :nth-child()pseudo selector */
+        li:nth-child(4){
+            color:blue;
+        }
+
+        li:nth-child(2){
+            color:blueviolet;
+        }
+        li:nth-child(3){
+            color:aquamarine;
+        }
+
+
+        div::before{
+            content: "lorem30";
+        }
+        div::after{
+            content: "pakistan is great";
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum ullam asperiores exercitationem mollitia deleniti vitae. Voluptatem reiciendis nemo voluptatibus!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam nobis repellat eos ipsum amet laborum
+            atque ullam? Quaerat deleniti maiores fugiat odio voluptatibus aperiam sapiente, consequatur soluta quo
+            architecto harum, molestiae nostrum, natus magni ut? Odio dolores molestiae distinctio consequatur.</p>
+            <ul>  
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est, natus deserunt doloribus debitis, esse
+                    ullam repellat quisquam voluptatum animi vitae. Hic, eos. Expedita quisquam accusamus earum maxime
+                    labore impedit?</p>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est, natus deserunt doloribus debitis, esse
+                ullam repellat quisquam voluptatum animi vitae. Hic, eos. Expedita quisquam accusamus earum maxime
+                labore impedit?</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est, natus deserunt doloribus debitis, esse
+                    ullam repellat quisquam voluptatum animi vitae. Hic, eos. Expedita quisquam accusamus earum maxime
+                    labore impedit?</p>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa est, natus deserunt doloribus debitis, esse
+                        ullam repellat quisquam voluptatum animi vitae. Hic, eos. Expedita quisquam accusamus earum maxime
+                        labore impedit?</p>
+                    </li>
+                     </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, ipsa!</p>
+    </div>
+</body>
+
+</html>

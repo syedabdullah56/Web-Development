@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 12px;
+        }
+
+        .navbar li a:hover {
+            color: lightgray;
+            font-size: larger;
+        }
+
+        .search {
+            float: right
+        }
+
+        .navbar input {
+            margin: 10px;
+            margin-right: 25px;
+            width: 250px;
+            border-radius: 10px;
+            height: 20px;
+        }
+
+        .navbar input:hover {
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Services</a></li>
+                <div class="search" id="search">
+                    <input type="text" name="search" id="sea" placeholder="Search what you want">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 550px;
+            width: 100%;
+            border: 3px solid black;
+            /* padding:20px;
+            margin:20px; */
+            /* initialize container as flex box */
+            display: flex;
+            /* flexbox container properties */
+
+            /* flex-direction property */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse;  */
+
+            /* flexwrap property */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: wrap; */
+
+            /* direction and wrap in single time */
+            flex-flow: row wrap;
+
+            /* justify content property */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align items property */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex start; */
+
+
+            /* flex item properties: */
+
+
+        }
+
+        .box {
+            height: 100px;
+            width: 70px;
+            border: 2px solid red;
+            background-color: lightgray;
+
+        }
+
+        /* whose order is greater will go to the end */
+        /* the greater the flex grow it will grow graater on increasing the size of screen */
+        /* the greater the flex shrink it will shrink graater on decreasing the size of screen */
+
+        /* using grow shrink flexbasis in same time
+        flex:10 8 260px; */
+
+
+
+        #box1 {
+            order: 20;
+            flex-grow: 10;
+            flex-shrink: 8;
+        }
+
+        #box2 {
+            order: 16;
+            flex-grow: 5;
+            flex-shrink: 10;
+        }
+
+        #box3 {
+            order: 18;
+            flex-basis: 200px;
+            flex:11 11 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">first box</div>
+        <div class="box" id="box2">second box</div>
+        <div class="box" id="box3">third box</div>
+        <!-- <div class="box" id="box4">fourth box</div> -->
+        <!-- <div class="box" id="box5">fifth box</div> -->
+        <!-- <div class="box" id="box6">sixth box</div> -->
+    </div>
+</body>
+
+</html>

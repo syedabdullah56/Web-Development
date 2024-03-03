@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPANNING IN GRIDS</title>
+    <style>
+       .item{
+          background-color: lightpink;
+          border:2px solid black;
+          padding:3px;
+       }
+       .container{
+          display:grid;
+          grid-template-columns: 1fr 2fr 3fr 2fr;
+          grid-template-rows:auto auto auto auto;
+          grid-gap: 1rem;
+        
+       }
+       .item:first-child{
+/* 
+          grid-column-start: 1;
+         grid-column-end: 4; 
+         grid-row-start: 1;
+         grid-row-end: 5; */
+         
+         /* shortcut */
+         /* it will take space of four columns and rows respectively */
+         grid-column: 1/4;
+         grid-row: 1/4;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">ITEM 1 </div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+        <div class="item">ITEM 7</div>
+        <div class="item">ITEM 8</div>
+        <div class="item">ITEM 9</div>
+        <div class="item">ITEM 10</div>
+        <div class="item">ITEM 11</div>
+        <div class="item">ITEM 12</div>
+    </div>
+</body>
+
+</html>
